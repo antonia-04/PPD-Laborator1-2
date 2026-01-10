@@ -12,23 +12,14 @@ add_executable(PPD_Laborator1_C__ main.cpp
         header/SequentialConvolution.h
         source/ConvolutionRows.cpp
         header/ConvolutionRows.h
-        source/ConvolutionCols.cpp
-        header/ConvolutionCols.h
         source/EvaluateTime.cpp
         header/EvaluateTime.h
+        header/Barrier.h
 )
 
-add_executable(StaticMain
-        static.cpp
-)
 
-add_executable(StaticBig
-        staticBig.cpp
-)
 
 if (MINGW)
     target_link_options(PPD_Laborator1_C__ PRIVATE -static -static-libgcc -static-libstdc++)
-    target_link_options(StaticBig PRIVATE -static -static-libgcc -static-libstdc++)
-    target_link_options(StaticMain PRIVATE -static -static-libgcc -static-libstdc++)
 
 endif()

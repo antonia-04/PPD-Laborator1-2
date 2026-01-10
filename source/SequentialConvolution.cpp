@@ -1,8 +1,6 @@
 #include "../header/SequentialConvolution.h"
-
-#include <pthread.h>
-
-#include "../header/DataGeneration.h"
+#include <cstring> // Pentru memcpy
+#include <algorithm> // Pentru std::swap
 
 SequentialConvolution::SequentialConvolution(int N, int M, int K, int **matrix, int **filter) {
     this->N = N;
@@ -10,45 +8,68 @@ SequentialConvolution::SequentialConvolution(int N, int M, int K, int **matrix, 
     this->K = K;
     this->matrix = matrix;
     this->convolution_matrix = filter;
-    this->new_matrix = new int *[N];
-    for (int i = 0; i < N; i++) {
-        this->new_matrix[i] = new int[M];
-    }
 }
 
 
 void SequentialConvolution::compute(const string &result_file) {
-    for (int i = 0; i < N; i++) {
-        for (int j = 0; j < M; j++) {
-            new_matrix[i][j] = compute_element(i, j);
-        }
-    }
-}
-
-int SequentialConvolution::compute_element(int i, int j) {
     const int half = K / 2;
-    int sum = 0;
+    const size_t row_size_bytes = M * sizeof(int);
 
-    for (int a = -half; a <= half; a++) {
-        for (int b = -half; b <= half; b++) {
-            int x = i + a;
-            int y = j + b;
-            if (x < 0) x = 0;
-            if (y < 0) y = 0;
-            if (x >= N) x = N - 1;
-            if (y >= M) y = M - 1;
-            sum += matrix[x][y] * convolution_matrix[a + half][b + half];
-        }
+    // alocam bufferele O(M)
+    int *prevRow = new int[M];
+    int *currRow = new int[M];
+    int *nextRow = new int[M];
+    int *resultRow = new int[M];
+
+    // init fereastra pt prima linie
+    memcpy(prevRow, matrix[0], row_size_bytes);
+    memcpy(currRow, matrix[0], row_size_bytes);
+    if (N > 1) {
+        memcpy(nextRow, matrix[1], row_size_bytes);
+    } else {
+        memcpy(nextRow, matrix[0], row_size_bytes);
     }
-    return sum;
-}
 
-int **SequentialConvolution::getNewMatrix() {
-    return new_matrix;
-}
+    for (int i = 0; i < N; i++) {
 
-SequentialConvolution::~SequentialConvolution() {
-    for (int i = 0; i < N; i++)
-        delete[] new_matrix[i];
-    delete[] new_matrix;
+        // convolutia pentru linia i
+        for (int j = 0; j < M; j++) {
+            int sum = 0;
+            for (int a = 0; a < K; a++) {
+                for (int b = 0; b < K; b++) {
+
+                    int y = j + (b - half); // y = j-1, j, j+1 (pt k=3)
+
+                    // clamping stanga/dreapta
+                    if (y < 0) y = 0;
+                    if (y >= M) y = M - 1;
+
+                    int value;
+                    if (a == 0) value = prevRow[y];      // i-1
+                    else if (a == 1) value = currRow[y]; //  i
+                    else value = nextRow[y];             //  i+1
+
+                    sum += value * convolution_matrix[a][b];
+                }
+            }
+            resultRow[j] = sum;
+        }
+
+        // suprascriem in-place linia i
+        memcpy(matrix[i], resultRow, row_size_bytes);
+
+        // actualizam fereastra, rotim pointerii
+        std::swap(prevRow, currRow);
+        std::swap(currRow, nextRow);
+
+        // copiem noua linie nextRow
+        int next_i = (i + 2 < N) ? i + 2 : N - 1; // clamping jos
+        memcpy(nextRow, matrix[next_i], row_size_bytes);
+    }
+
+    // dealoc bufferele
+    delete[] prevRow;
+    delete[] currRow;
+    delete[] nextRow;
+    delete[] resultRow;
 }

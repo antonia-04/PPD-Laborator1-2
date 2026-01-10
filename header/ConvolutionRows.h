@@ -1,5 +1,9 @@
+#pragma once
+
 #include <string>
 #include <thread>
+#include "../header/Barrier.h"
+
 using namespace std;
 
 class ConvolutionRows {
@@ -10,16 +14,19 @@ private:
     int P;
     int **matrix;
     int **convolution_matrix;
-    int **new_matrix;
     thread *threads;
 
-    void computeD(int start_idx, int end_idx);
+    // clasa noastra barrier
+    Barrier &barrier;
 
-    int compute_element(int i, int j);
+    void computeD(int start_idx, int end_idx, int prev_ghost_idx, int next_ghost_idx);
+
 
 public:
-    ConvolutionRows(int N, int M, int K, int P, int **matrix, int **filter);
+    ConvolutionRows(int N, int M, int K, int P, int **matrix, int **filter,
+                    Barrier &barrier);
 
     void run();
-    int ** getNewMatrix();
+
+    ~ConvolutionRows();
 };

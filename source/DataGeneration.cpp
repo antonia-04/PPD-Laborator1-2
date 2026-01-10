@@ -1,7 +1,7 @@
 #include "../header/DataGeneration.h"
 #include <string>
 #include <fstream>
-#include <chrono>
+#include <cstdlib> // Pentru rand()
 
 using namespace std;
 
@@ -33,6 +33,7 @@ void DataGeneration::generateFilter() const {
 
 void DataGeneration::writeMatrixToFile(int **matrix, const string &matrix_file, const int rows, const int cols) {
     ofstream outM(matrix_file);
+    outM << rows << " " << cols << endl;
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             outM << matrix[i][j] << " ";
@@ -40,4 +41,3 @@ void DataGeneration::writeMatrixToFile(int **matrix, const string &matrix_file, 
         outM << endl;
     }
 }
-

@@ -3,17 +3,12 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader">{
-  &quot;useNewFormat&quot;: true
-}</component>
-  <component name="CMakeReloadState">
-    <option name="reloaded" value="true" />
-  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="PPD_Laborator1_C__" targetName="StaticBig" />
       <config projectName="PPD_Laborator1_C__" targetName="PPD_Laborator1_C__" />
-      <config projectName="PPD_Laborator1_C__" targetName="StaticMain" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -22,82 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="hai">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PPD-Laborator1-C++.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cache-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/cmakeFiles-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/codemodel-v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/query/toolchains-v1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-0772ace97a1e64010561.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-a7fd33f2561bd06f84e8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-38116179562a2eb3147c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2025-10-22T10-35-56-0073.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-PPD_Laborator1_C__-Debug-63c98bd9b88ce93b1f7a.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-StaticBig-Debug-5e1000ee604daa19c81d.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-StaticMain-Debug-463ae96fb19ac9240595.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/toolchains-v1-f1b2b3b9642b509dfa7c.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeRCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdC/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CompilerIdCXX/a.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/main.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ConvolutionCols.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ConvolutionH.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ConvolutionRows.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ConvolutionS.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ConvolutionV.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/DataGeneration.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/EstimateTime.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/EvaluateTime.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/MatrixGenerator.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/ReadFromFile.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/source/SequentialConvolution.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/static.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/PPD_Laborator1_C__.dir/staticBig.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/StaticBig.dir/staticBig.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/StaticMain.dir/static.cpp.obj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/PPD_Laborator1_C__.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/StaticBig.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/StaticMain.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/convolutionMatrix.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/matrix.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/outCpp.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultColsD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultColsS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultH-S.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultRowsD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultRowsS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultS-S.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultSeqStatic.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultSequentialD.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/resultV-S.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/scriptC.ps1" beforeDir="false" />
-    </list>
+    <list default="true" id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="hai" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,23 +30,11 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="laborator2" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/source/DataGeneration.cpp" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectApplicationVersion">
-    <option name="ide" value="CLion" />
-    <option name="majorVersion" value="2023" />
-    <option name="minorVersion" value="3.4" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
-  <component name="ProjectId" id="34OMgJAY2BoXdMSuFQ9R7cARsDb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -146,7 +54,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "laborator2",
     "last_opened_file_path": "C:/Users/Antonia/CLionProjects/PPD-Laborator1-C++",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -157,27 +65,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Antonia\CLionProjects\PPD-Laborator1-C++\cmake-build-debug" />
-      <recent name="C:\Users\Antonia\CLionProjects\PPD-Laborator1-C++" />
-    </key>
-  </component>
   <component name="RunManager" selected="CMake Application.PPD_Laborator1_C__">
     <configuration name="PPD_Laborator1_C__" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="PPD_Laborator1_C__" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="4 10 10 3" REDIRECT_INPUT="false" ELEVATE="true" USE_EXTERNAL_CONSOLE="true" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="PPD_Laborator1_C__" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="PPD_Laborator1_C__">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StaticBig" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="StaticBig" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="StaticBig">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StaticMain" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1000 1000 5" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="StaticMain" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="StaticMain">
+    <configuration name="PPD_Laborator1_C__" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="PPD_Laborator1_C__" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="PPD_Laborator1_C__">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -189,19 +81,14 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.PPD_Laborator1_C__" />
-      <item itemvalue="CMake Application.StaticBig" />
-      <item itemvalue="CMake Application.StaticMain" />
       <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
-        <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
-        <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="" />
@@ -224,7 +111,7 @@
       <workItem from="1763060928251" duration="573000" />
       <workItem from="1767823038771" duration="668000" />
       <workItem from="1768055038237" duration="2737000" />
-      <workItem from="1768058277334" duration="1044000" />
+      <workItem from="1768058277334" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="hai">
       <option name="closed" value="true" />
@@ -250,11 +137,6 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ps1" />
-  </component>
-  <component name="VCPKGProject">
-    <isAutomaticCheckingOnLaunch value="false" />
-    <isAutomaticFoundErrors value="true" />
-    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

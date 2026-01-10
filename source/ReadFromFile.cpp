@@ -1,11 +1,8 @@
 #include <fstream>
 #include "../header/ReadFromFile.h"
-
 #include <iostream>
 
-
 using namespace std;
-
 
 ReadFromFile::ReadFromFile(const int N, const int M) {
     this->N=N;
@@ -14,6 +11,9 @@ ReadFromFile::ReadFromFile(const int N, const int M) {
 
 int **ReadFromFile::readMatrix(const string &file_name) {
     ifstream in(file_name);
+    if (!in.is_open()) {
+        throw runtime_error("Eroare la deschiderea fisierului: " + file_name);
+    }
     int rows, cols;
     in >> rows >> cols;
 
@@ -24,6 +24,7 @@ int **ReadFromFile::readMatrix(const string &file_name) {
             in >> matrix[i][j];
         }
     }
+    in.close(); // E bine sa inchidem fisierul
     return matrix;
 }
 bool ReadFromFile::filesAreEqual(const string &file_name1, const string &file_name2) {
@@ -35,10 +36,10 @@ bool ReadFromFile::filesAreEqual(const string &file_name1, const string &file_na
     }
     f1.seekg(0, ios::end);
     f2.seekg(0, ios::end);
-     if (f1.tellg() != f2.tellg()) {
-         cout << "Not equal"<<endl;
-         return false;
-     }
+    if (f1.tellg() != f2.tellg()) {
+        cout << "Not equal"<<endl;
+        return false;
+    }
     f1.seekg(0, ios::beg);
     f2.seekg(0, ios::beg);
 
@@ -50,11 +51,3 @@ bool ReadFromFile::filesAreEqual(const string &file_name1, const string &file_na
     }
     return true;
 }
-
-
-
-
-
-
-
-
