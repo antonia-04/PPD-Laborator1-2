@@ -216,7 +216,7 @@ ConvolutionCUDASharedM::ConvolutionCUDASharedM(int N, int M, int K,
     this->convolution_matrix = filter;
 }
 
-void ConvolutionCUDASharedM::compute(const string & /*result_file*/) {
+void ConvolutionCUDASharedM::compute() {
     if (K != 3) {
         throw std::runtime_error("ConvolutionCUDASharedM supports only K=3.");
     }

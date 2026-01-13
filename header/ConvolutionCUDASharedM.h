@@ -16,6 +16,5 @@ public:
     ConvolutionCUDASharedM(int N, int M, int K, int **matrix, int **filter);
 
     // calculeaza convolutia in-place pe 'matrix' folosind tiling 2d si shared memory
-    // parametrul result_file este pastrat doar pentru simetrie cu celelalte clase, nu este folosit
-    void compute(const std::string &result_file);
+    void compute();
 };

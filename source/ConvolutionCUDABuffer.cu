@@ -76,7 +76,7 @@ ConvolutionCUDABuffer::ConvolutionCUDABuffer(int N, int M, int K, int **matrix, 
     this->convolution_matrix = filter;
 }
 
-void ConvolutionCUDABuffer::compute(const string & /*result_file*/) {
+void ConvolutionCUDABuffer::compute() {
     // kernelul 3x3 (k = 3)
     if (K != 3) {
         throw std::runtime_error("ConvolutionCUDA currently supports only K=3.");

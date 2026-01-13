@@ -18,6 +18,5 @@ public:
     ConvolutionCUDABuffer(int N, int M, int K, int **matrix, int **filter);
 
     // calculeaza convolutia in-place pe matricea 'matrix' folosind gpu
-    // parametrul result_file este pastrat doar pentru simetrie cu varianta secventiala, nu este folosit aici
-    void compute(const string &result_file);
+    void compute();
 };
