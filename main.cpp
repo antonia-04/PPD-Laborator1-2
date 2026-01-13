@@ -80,8 +80,16 @@ int main(int argc, char *argv[]) {
     bool ok_rows = filesAreEqual("resultRows.txt", "resultSequential.txt");
     cout << "Rows vs Sequential:   " << (ok_rows ? "true" : "false") << endl;
 
+    bool ok_cuda_classic = filesAreEqual("resultCudaClassic.txt", "resultSequential.txt");
+    cout << "CUDA (classic) vs Sequential: " << (ok_cuda_classic ? "true" : "false") << endl;
+
+
     bool ok_cuda = filesAreEqual("resultCuda.txt", "resultSequential.txt");
     cout << "CUDA vs Sequential:   " << (ok_cuda ? "true" : "false") << endl;
+
+    bool ok_cuda_shared = filesAreEqual("resultCudaShared.txt", "resultSequential.txt");
+    cout << "CUDA (shared) vs Sequential: " << (ok_cuda_shared ? "true" : "false") << endl;
+
 
     cout << "==================================================" << endl;
 

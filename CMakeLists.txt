@@ -30,9 +30,14 @@ add_executable(PPD_Laborator1_C__
         source/EvaluateTime.cpp
         header/EvaluateTime.h
         header/Barrier.h
-        header/ConvolutionCUDA.h
+        header/ConvolutionCUDABuffer.h
         # IMPORTANT: fișierul CUDA trebuie să fie .cu
-        source/ConvolutionCUDA.cu
+        source/ConvolutionCUDABuffer.cu
+        header/ConvolutionCUDASharedM.h
+        source/ConvolutionCUDASharedM.cu
+        header/ConvolutionCUDAClassic.h
+        source/ConvolutionCUDAClassic.cu
+        source/WarmUpCUDA.cu
 )
 
 # Opțional, dar util: spune CMake-ului să facă separable compilation pe CUDA
