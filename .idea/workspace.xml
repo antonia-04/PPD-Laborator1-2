@@ -3,9 +3,20 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
       <config projectName="PPD_Laborator1_C__" targetName="PPD_Laborator1_C__" />
@@ -13,11 +24,21 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="Debug-Visual Studio" ENABLED="true" CONFIG_NAME="Debug" TOOLCHAIN_NAME="Visual Studio" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="hai" />
+    <list default="true" id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="hai">
+      <change afterPath="$PROJECT_DIR$/header/ConvolutionCUDA.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/ConvolutionCUDA.cu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PPD-Laborator1-C++.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PPD-Laborator1-C++.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header/EvaluateTime.h" beforeDir="false" afterPath="$PROJECT_DIR$/header/EvaluateTime.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/EvaluateTime.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/source/EvaluateTime.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,69 +47,105 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug-Visual Studio" />
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="laborator2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/source/ConvolutionCUDA.cu" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/DataGeneration.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="I6h415i8" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="3.4" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="34OMgJAY2BoXdMSuFQ9R7cARsDb" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "CMake Application.PPD_Laborator1_C__.executor": "Run",
-    "CMake Application.StaticBig.executor": "Debug",
-    "CMake Application.StaticMain.executor": "Run",
-    "CMake Debug.PPD_Laborator1_C__.executor": "Debug",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "laborator2",
-    "last_opened_file_path": "C:/Users/Antonia/CLionProjects/PPD-Laborator1-C++",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CMakeSettings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.PPD_Laborator1_C__.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.StaticBig.executor&quot;: &quot;Debug&quot;,
+    &quot;CMake Application.StaticMain.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Debug.PPD_Laborator1_C__.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;temaCUDA&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Antonia/CLionProjects/PPD-Laborator1-C++&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Antonia\CLionProjects\PPD-Laborator1-C++\cmake-build-debug" />
+      <recent name="C:\Users\Antonia\CLionProjects\PPD-Laborator1-C++" />
+    </key>
+  </component>
   <component name="RunManager" selected="CMake Application.PPD_Laborator1_C__">
     <configuration name="PPD_Laborator1_C__" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory" temporary="true">
       <method v="2" />
     </configuration>
-    <configuration name="PPD_Laborator1_C__" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="PPD_Laborator1_C__" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="PPD_Laborator1_C__">
+    <configuration name="PPD_Laborator1_C__" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="8 1000 1000 3" REDIRECT_INPUT="false" ELEVATE="true" USE_EXTERNAL_CONSOLE="true" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="PPD_Laborator1_C__" CONFIG_NAME="Debug-Visual Studio" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="PPD_Laborator1_C__">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="StaticBig" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="StaticBig" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="StaticBig">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StaticMain" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="10 1000 1000 5" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="PPD_Laborator1_C__" TARGET_NAME="StaticMain" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="PPD_Laborator1_C__" RUN_TARGET_NAME="StaticMain">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="CMake Application.PPD_Laborator1_C__" />
+      <item itemvalue="CMake Application.StaticBig" />
+      <item itemvalue="CMake Application.StaticMain" />
       <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
+        <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
+        <item itemvalue="CMake Debug.PPD_Laborator1_C__" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="61b42364-c8b3-44b9-a0ef-fe6b8aa89a69" name="Changes" comment="" />
@@ -111,7 +168,9 @@
       <workItem from="1763060928251" duration="573000" />
       <workItem from="1767823038771" duration="668000" />
       <workItem from="1768055038237" duration="2737000" />
-      <workItem from="1768058277334" duration="1775000" />
+      <workItem from="1768058277334" duration="1044000" />
+      <workItem from="1768241651602" duration="3335000" />
+      <workItem from="1768304748890" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="hai">
       <option name="closed" value="true" />
@@ -137,6 +196,11 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.ps1" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

@@ -1,6 +1,7 @@
 #include "../header/EvaluateTime.h"
 #include "../header/ReadFromFile.h"
 #include "../header/SequentialConvolution.h"
+#include "../header/ConvolutionCUDA.h"
 #include <chrono>
 #include "../header/ConvolutionRows.h"
 #include <iostream>
@@ -53,6 +54,8 @@ void EvaluateTime::run() {
     cout << "Alocare Dinamica (int**)" << endl;
     cout << "Secvential: " << estimate_conv_dyn_S() << "ms" << endl;
     cout << "Thread Orizontal cu P=" << P << ": " << estimate_conv_dyn_H(P) << "ms" << endl;
+    double cudaTime = estimate_conv_cuda();
+    cout << "Timp CUDA:              " << cudaTime << " ms\n";
 }
 
 double EvaluateTime::estimate_conv_dyn_S() {
@@ -88,3 +91,26 @@ double EvaluateTime::estimate_conv_dyn_H(const int threads) {
 
     return round_time.count();
 }
+
+double EvaluateTime::estimate_conv_cuda() {
+    using namespace std::chrono;
+
+    // copiem matricea originală ca să nu o stricăm
+    int **matrixForCuda = deepCopyMatrix(originalMatrix, N, M);
+
+    auto start_time = high_resolution_clock::now();
+
+    ConvolutionCUDA conv_cuda(N, M, K, matrixForCuda, convolutionMatrix);
+    conv_cuda.compute("resultCuda.txt");
+
+    auto end_time = high_resolution_clock::now();
+    duration<double, milli> elapsed = end_time - start_time;
+
+    // scriem rezultatul ca să putem compara cu secvențial/paralel
+    DataGeneration::writeMatrixToFile(matrixForCuda, "resultCuda.txt", N, M);
+
+    deleteMatrix(matrixForCuda, N);
+
+    return elapsed.count();
+}
+

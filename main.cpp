@@ -1,8 +1,9 @@
 #include <iostream>
-#include "header/ConvolutionRows.h" // Modificat
+#include <fstream>
+#include "header/ConvolutionRows.h"
 #include "header/DataGeneration.h"
-#include "header/SequentialConvolution.h" // Modificat
-#include "header/EvaluateTime.h" // Modificat
+#include "header/SequentialConvolution.h"
+#include "header/EvaluateTime.h"
 #include "header/ReadFromFile.h"
 
 using namespace std;
@@ -17,7 +18,6 @@ bool filesAreEqual(const string &file_name1, const string &file_name2) {
     f1.seekg(0, ios::end);
     f2.seekg(0, ios::end);
     if (f1.tellg() != f2.tellg()) {
-        cout << "Not equal" << endl;
         return false;
     }
     f1.seekg(0, ios::beg);
@@ -32,7 +32,6 @@ bool filesAreEqual(const string &file_name1, const string &file_name2) {
     return true;
 }
 
-// functie pt eliminarea matricilor alocate dinamic
 void deleteMatrix(int** matrix, int rows) {
     if (matrix != nullptr) {
         for (int i = 0; i < rows; i++) {
@@ -43,38 +42,55 @@ void deleteMatrix(int** matrix, int rows) {
 }
 
 int main(int argc, char *argv[]) {
+
     if (argc < 5) {
-        cout << "Order is P N M K";
+        cout << "Usage: ./exec P N M K" << endl;
+        cout << "Where:" << endl;
+        cout << " P = threads for parallel rows" << endl;
+        cout << " N, M = matrix dims" << endl;
+        cout << " K = convolution kernel size (K=3 in Lab2)" << endl;
         return 1;
     }
+
     int P = atoi(argv[1]);
     int N = atoi(argv[2]);
     int M = atoi(argv[3]);
     int K = atoi(argv[4]);
 
     if (K != 3) {
-        cout << "Atentie: Laboratorul 2 specifica K=3." << endl;
+        cout << "WARNING: Lab 2 specifies K = 3 explicitly!" << endl;
     }
 
+    // generate test files
     DataGeneration generator("matrix.txt", "convolutionMatrix.txt", N, M, K);
     generator.generateMatrix();
     generator.generateFilter();
 
-    // citim datele o singura data
+    // read data once
     int** originalMatrix = ReadFromFile::readMatrix("matrix.txt");
     int** convolutionMatrix = ReadFromFile::readMatrix("convolutionMatrix.txt");
 
-    EvaluateTime estimate_time(N, M, P, K, originalMatrix, convolutionMatrix);
-    estimate_time.run();
+    // evaluate times
+    EvaluateTime evaluator(N, M, P, K, originalMatrix, convolutionMatrix);
+    evaluator.run();
 
-    // verificam corectitudinea
-    cout << "==========================================" << endl;
-    bool ok = filesAreEqual("resultRows.txt", "resultSequential.txt");
-    cout << "Verificare corectitudine (Rows vs Seq): " << (ok ? "true" : "false") << endl;
-    cout << "==========================================" << endl;
+    cout << endl;
+    cout << "============ VERIFICARE CORECTITUDINE ============" << endl;
+
+    bool ok_rows = filesAreEqual("resultRows.txt", "resultSequential.txt");
+    cout << "Rows vs Sequential:   " << (ok_rows ? "true" : "false") << endl;
+
+    bool ok_cuda = filesAreEqual("resultCuda.txt", "resultSequential.txt");
+    cout << "CUDA vs Sequential:   " << (ok_cuda ? "true" : "false") << endl;
+
+    cout << "==================================================" << endl;
 
     deleteMatrix(originalMatrix, N);
     deleteMatrix(convolutionMatrix, K);
+
+    cout << "Pres ENTER to exit..." << endl;
+    cin.get();
+
 
     return 0;
 }

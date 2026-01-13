@@ -23,4 +23,6 @@ public:
     double estimate_conv_dyn_S();
 
     double estimate_conv_dyn_H(int threads);
+
+    double estimate_conv_cuda();
 };
