@@ -146,7 +146,7 @@ double EvaluateTime::estimate_conv_cuda() {
     auto start_time = high_resolution_clock::now();
 
     ConvolutionCUDABuffer conv_cuda(N, M, K, matrixForCuda, convolutionMatrix);
-    conv_cuda.compute("resultCuda.txt");
+    conv_cuda.compute();
 
     auto end_time = high_resolution_clock::now();
     duration<double, milli> elapsed = end_time - start_time;
@@ -166,7 +166,7 @@ double EvaluateTime::estimate_conv_cuda_shared() {
 
     auto start = high_resolution_clock::now();
     ConvolutionCUDASharedM conv(N, M, K, matrixCopy, convolutionMatrix);
-    conv.compute("resultCudaShared.txt");
+    conv.compute();
     auto end = high_resolution_clock::now();
 
     DataGeneration::writeMatrixToFile(matrixCopy, "resultCudaShared.txt", N, M);

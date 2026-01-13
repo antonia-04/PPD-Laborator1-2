@@ -5,6 +5,7 @@
 #include "header/SequentialConvolution.h"
 #include "header/EvaluateTime.h"
 #include "header/ReadFromFile.h"
+#include <filesystem>
 
 using namespace std;
 
@@ -66,6 +67,7 @@ int main(int argc, char *argv[]) {
     generator.generateMatrix();
     generator.generateFilter();
 
+
     // read data once
     int** originalMatrix = ReadFromFile::readMatrix("matrix.txt");
     int** convolutionMatrix = ReadFromFile::readMatrix("convolutionMatrix.txt");
@@ -96,8 +98,8 @@ int main(int argc, char *argv[]) {
     deleteMatrix(originalMatrix, N);
     deleteMatrix(convolutionMatrix, K);
 
-    cout << "Pres ENTER to exit..." << endl;
-    cin.get();
+    // cout << "Pres ENTER to exit..." << endl;
+    // cin.get();
 
 
     return 0;
